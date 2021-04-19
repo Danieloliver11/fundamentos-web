@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://redditad.com/getcbids.html?_csvr=041906_224 -->
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMLlOP3Rke738aeqtDCGp0IgSY5XBv7c+brDMmurbYvOFgakGw6sUG8fwt6VkjnOX9s9Kba1Drg2M9Bye/F3x7MCAwEAAQ==_dCIpkiYMtATT6BBOukG9d+C/bVNsz6WFD4Y8A6Sv38IOhCX+QJex3srgJtV9i+3fSRAMBPRbbHy/O+ZWlMIZ6Q=="><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="./adrecover.js"></script><script type="text/javascript" src="./aaxcb.js"></script><script>
+        function isDisplayIframe(type) {
+            return type;
+        }
+
+        function isPrefetchIframe(type) {
+            return type === "prefetch_frame";
+        }
+
+        function buildDisplayUrl(srcUrl, type) {
+            srcUrl = srcUrl + "&type=" + type;
+            if (isPrefetchIframe(type)) {
+                srcUrl = "";
+            }
+            return srcUrl;
+        }
+
+        function getScriptUrl(srcUrl) {
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (isDisplayIframe(iframeParams.type)) {
+                        srcUrl = buildDisplayUrl(srcUrl, iframeParams.type);
+                    }
+                } catch (e) {
+                }
+            }
+            return srcUrl;
+        }
+
+        function loadScript(scriptUrl) {
+            if (scriptUrl === "") {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = scriptUrl;
+            var placeTag = document.getElementsByTagName("script")[0];
+            placeTag.parentNode.insertBefore(script, placeTag);
+        }
+
+        window.aax = window.aax || {};
+        window.aax["__conf"] = {"referer":"https://www.reddit.com/"};
+        scriptUrl = getScriptUrl("https://c.aaxads.com/aaxcb.js?svr=041906_224");
+        loadScript(scriptUrl);
+    </script>
+</head>
+<body marginwidth="0" marginheight="0"><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="iframe4" src="./async_usersync.html" style="display: none !important;"></iframe><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="iframe2" src="./ixmatch.html" style="display: none !important;"></iframe>
+
+</body></html>

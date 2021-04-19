@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0153)https://redditad.com/display.html?_otarOg=https%3A%2F%2Fwww.reddit.com&_cpub=AAX763KC6&_csvr=041906_224&_cgdpr=0&_cgdprconsent=1&_cusp_status=0&_ccoppa=0 -->
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMLlOP3Rke738aeqtDCGp0IgSY5XBv7c+brDMmurbYvOFgakGw6sUG8fwt6VkjnOX9s9Kba1Drg2M9Bye/F3x7MCAwEAAQ==_WC5AH2oNIx5FCR80TOOgeIGsKvj9cddPMKkbAANk1eqyxGp21RUMhK/R1dqYpMHN15s6k5/DQCWpCaS4gtVI7g=="><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        function isDisplayIframe(type) {
+            return type;
+        }
+
+        function isPrefetchIframe(type) {
+            return type === "prefetch_frame";
+        }
+
+        function buildDisplayUrl(srcUrl, type) {
+            srcUrl = srcUrl + "&type=" + type;
+            if (isPrefetchIframe(type)) {
+                srcUrl = "";
+            }
+            return srcUrl;
+        }
+
+        function getScriptUrl(srcUrl) {
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (isDisplayIframe(iframeParams.type)) {
+                        srcUrl = buildDisplayUrl(srcUrl, iframeParams.type);
+                    }
+                } catch (e) {
+                }
+            }
+            return srcUrl;
+        }
+
+        function loadScript(scriptUrl) {
+            if (scriptUrl === "") {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = scriptUrl;
+            var placeTag = document.getElementsByTagName("script")[0];
+            placeTag.parentNode.insertBefore(script, placeTag);
+        }
+
+        window.aax = window.aax || {};
+        window.aax["__conf"] = {"tarOg":"https://www.reddit.com","referer":"https://www.reddit.com/"};
+        scriptUrl = getScriptUrl("https://c.aaxads.com/aaxd.js?pub=AAX763KC6&svr=041906_224&gdpr=0&gdprconsent=1&usp_status=0&coppa=0");
+        loadScript(scriptUrl);
+    </script>
+</head>
+<body marginwidth="0" marginheight="0">
+
+</body></html>
