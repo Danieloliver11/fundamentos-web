@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding:0px;
+    background-image: url("/HTML/ex1/img/fundo.jpg");
+}
+
+/*MENU*/
+.menu ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.menu a{
+    text-decoration: none;
+padding: 5px;
+margin: 5px;
+background-color: rgb(94, 7, 13);
+color: rgb(255, 209, 205);
+border: black  1px solid;
+border-radius: 5%;
+}
+.menu a:hover  {
+    background-color: rgb(66, 50, 51);
+
+}
+
+
+.interface{
+    width: 800px;
+    background-color: rgb(233, 218, 218);
+    height: auto;
+    padding: 20px;
+    margin: 10px auto 0px auto;
+}
+
+.secao{
+padding: 10px;
+margin: 10px 100px 100px 100px;
+}
+p{
+    margin: 5px 50px 50px 50px;
+}
+.forma {
+   margin: 50px auto 0px auto;
+}
+
+.forma input {
+background-color: rgba(250, 249, 249, 0.452);
+text-decoration: none;
+box-shadow: 0 0 0 0;
+border: 0 none;
+outline: 0;
+}
+textarea{
+    background-color: rgba(250, 249, 249, 0.452);
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+
+}
+
+.logo img{
+max-width: 720px;
+ max-height: 150px;
+}
+.tm-social{
+width: 50px;
+height: 50px;
+}
+.footer img{
+    margin: 0px 10px 0px 125px;
+}
