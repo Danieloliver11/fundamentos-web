@@ -36,19 +36,7 @@
         <iframe   width="560" height="315" src="https://www.youtube.com/embed/YUgfMNUVo48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <iframe  class="spotify" src="https://open.spotify.com/embed/track/75KOwLDScYAujfw5BZGZUP" autoplay=1&loop=1&autopause=0" allow="autoplay" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <!--<div class="forma" >
-                    <p>Entre em contato e tenha acesso exclusivos sobre noticias desse manga</p>
-
-            <form  action="">
-                <label for="nome"> Nome:</label><input type="text" id="nome"></br>
-            <label for="email">Email:</label> <input type="email"id=˜email˜><br>
-                <label for="assunto"></label><textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-            <br>
-            <br>
-            <button>Enviar</button>
-        </div>
-
-    </form>-->
+        
     
 </section>
 
@@ -69,20 +57,29 @@
 </footer>
 
 </div>
+
 <aside id="lado">
     <div class="forma" >
         <p>Entre em contato para novas ideias!</p>
 
 <form  action="">
-    <label for="nome"> Nome:</label><input type="text" id="nome"></br>
-<label for="email">Email:</label> <input type="email"id=˜email˜><br>
-    <label for="assunto"></label><textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+    <label for="nome"> Nome:</label><input type="text" id="nome" onkeyup="validaNome()"></br>
+    <div id="textNome"></div>
+<label for="email">Email:</label> <input type="email"id="email" onkeyup="validaEmail()"><br>
+<div id="textEmail"></div><br>
+    <label for="assunto"></label><textarea name="assunto" id="assunto" id="area" onkeyup="textoAres()" cols="30" rows="10"></textarea>
+    <div id="textArea"></div>
+
 <br>
 <br>
-<button>Enviar</button>
+<button onclick="validar()">Enviar</button><br><br>
+
+<iframe onmousemove="entrar()" onmouseout="sair()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.2416237284056!2d-0.6065913841774371!3d51.48389397963129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876113b36b5e89b%3A0xce2f4846c5f7e1e5!2sCastelo%20de%20Windsor!5e1!3m2!1spt-BR!2sbr!4v1618952630176!5m2!1spt-BR!2sbr"
+ width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" id="mapa"></iframe><!--600,450-->
 </div>
 
 </form>
 </aside>
+<script src="/HTML/ex1/exercicio1-index/script/script.js"></script>
 </body>
 </html>
